@@ -1,0 +1,66 @@
+<div class="application"> 
+    <form action="">
+        <fieldset>
+            <legend>Learning Feedback</legend>
+             <div class="content">
+                <div class="center header">
+                    Learning Feeback
+                </div>
+                <div class="row">
+                     <div class="col s7 main_text">
+                        Please Check below to best describe your satisfaction with class
+                    </div>
+                </div>
+                <div class="card-panel">
+                <div class="row">
+                    <div class="col s8 main_text">
+                         Learning Objective
+                    </div>
+                    <div class="col s4 main_text">
+                        <div class="col s2">
+                         Poor
+                        </div>
+                        <div class="col s2 right_text">
+                         Excellent
+                        </div>
+                    </div>
+                         
+                </div>
+                <div class="row" *ngFor= "let item of questions_data">
+                    <div class="col s8" >
+                       {{item.question}}
+                    </div>
+                    <div class="col s4 valign-wrapper ">
+                     <div *ngFor="let image of images">
+                           <input type="image" class="smily" src="./images/{{image}}.jpg" (click)="optionselected(1,image);  false">
+                     </div>  
+                    </div>
+                </div>
+                
+                <div class="row">
+                     <div class="col s8 main_text">
+                         Learning facilitator
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 main_text">
+                        Remarks, If any(Optional)
+                    </div> 
+                    <div class="col s8">
+                         <div class="input-field col s8">
+                             <input placeholder="Remarks" #remark id="first_name" type="text">
+                        </div>
+                    </div>
+               </div>
+               <div class="row buttons">
+                 <button class="btn waves-effect waves-light buttons" type="submit" name="action" (click)="onReset() ; false">Reset
+                 </button>
+                  <button class="btn waves-effect waves-light buttons" type="submit" name="action" (click)="onSubmit(remark.value); false">Submit
+                 </button>
+               </div>
+             </div>
+        </fieldset>
+       
+    </form>
+</div> 

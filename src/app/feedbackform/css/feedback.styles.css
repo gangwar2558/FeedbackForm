@@ -1,0 +1,49 @@
+.header {
+  color: green;
+  font-weight: bold;
+  font-size: 35px;
+  }
+.application {
+  padding:20px;
+  }
+.main_text
+{
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.content {
+  margin : 10px 20px 10px 40px;
+}
+.row
+{
+  margin : 0px !important;
+}
+.smily {
+margin-right : 5px !important;
+}
+.buttons {
+margin-right : 50px !important;
+text-align: center;
+margin-top : 30px !important;
+}
+.right_text
+{
+  margin-left: 40px !important;
+}
+.btns
+{
+  border-radius:  50%;
+  width : 70px;
+  height : 70px;
+  margin : 20px;
+  border: 1px solid black;
+}
+.reset
+{
+ background-color:red !important;
+}
+.submit
+{
+  background-color: green !important;
+}
